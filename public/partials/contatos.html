@@ -1,0 +1,34 @@
+<div class="jumbomtron">
+	<h1>{{title}}</h1>
+</div>
+
+<a href="#/contato" class="btn btn-primary">Novo Contato</a>
+
+<div class="alert alert-success" ng-if="message.text">
+	{{message.text}}	
+</div>
+
+<div class="alert alert-danger" ng-if="contatos.length === 0">
+	Nenhum contato cadastrado!
+</div>
+
+<p class="text-info" ng-show="contatos.length > 0">Total de Contatos: {{contatos.length}}</p>
+
+<table class="table table-striped table-responsive">
+	<thead>
+		<tr>
+			<td>Nome</td>
+			<td>Email</td>
+			<td>Ação</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="contato in contatos">
+			<td><a href="#/contato/{{contato.id}}">{{contato.nome}}</a></td>
+			<td><a href="#/contato/{{contato.id}}">{{contato.email}}</a></td>
+			<td>
+				<button class="btn btn-warning" ng-click="remover(contato)">Excluir</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

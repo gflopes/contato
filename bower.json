@@ -1,0 +1,29 @@
+{
+  "name": "contato",
+  "description": "treinamento mean stack",
+  "main": "server.js",
+  "authors": [
+    "Gustavo Lopes"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mongodb",
+    "expressjs",
+    "nodejs",
+    "angularjs"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.5.8"
+  }
+}

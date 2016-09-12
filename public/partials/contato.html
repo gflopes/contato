@@ -1,0 +1,19 @@
+<div class="alert" ng-class="message.class" ng-if="message">
+	{{message.text}}
+</div>
+
+<form class="form-group" ng-submit="salvar(contato)">
+	<label for="">Contato</label>
+
+	<input class="form-control" type="text" ng-model="contato.nome" placeholder="Nome completo">
+	<br>
+
+	<div class="input-group">
+		<span class="input-group-addon">@</span>
+		<input class="form-control" type="text" ng-model="contato.email" placeholder="Email do contato">
+	</div>
+	<br>
+
+	<input type="submit" value="Enviar" class="btn btn-primary">
+	<a href="#/contatos" class="btn btn-default">Voltar</a>
+</form>
